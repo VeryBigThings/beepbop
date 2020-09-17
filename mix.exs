@@ -4,7 +4,7 @@ defmodule BeepBop.MixProject do
   def project do
     [
       app: :beepbop,
-      version: "0.0.1",
+      version: "0.0.2",
       elixir: ">= 1.5.3",
       description: description(),
       start_permanent: Mix.env() == :prod,
@@ -33,8 +33,9 @@ defmodule BeepBop.MixProject do
       {:credo, "~> 0.9.1", only: :dev, runtime: false},
       {:credo_contrib, "~> 0.1.0-rc", only: :dev, runtime: false},
       {:excoveralls, "~> 0.7", only: :test},
-      {:ecto, "~> 2.2"},
-      {:postgrex, "~> 0.13.5", only: :test},
+      {:ecto, "~> 3.4"},
+      {:ecto_sql, "~> 3.4"},
+      {:postgrex, "~> 0.15", only: :test},
       {:ex_doc, "~> 0.18", only: :dev, runtime: false}
     ]
   end

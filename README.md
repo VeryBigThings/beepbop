@@ -5,6 +5,7 @@
 
 ## TODO
 
+* [x] Bump Ecto version
 * [x] Check if the module is actually a Schema, and that it has the given filed in the struct.
 * [x] Implement `%{from: %{not: []}}`.
 * [x] Implement `%{from: :any}`.
